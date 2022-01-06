@@ -16,7 +16,7 @@ export default function HomePage({ news }) {
           <NewsItem key={item.id} news={item} />
         ))}
         {news.length > 0 && (
-          <Link href="/news">
+          <Link href="/sutra">
             <a className="btn-secondary">View All News</a>
           </Link>
         )}
