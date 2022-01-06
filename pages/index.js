@@ -10,14 +10,14 @@ export default function HomePage({ news }) {
   return (
     <div>
       <Layout>
-        <h1>Latest News</h1>
-        {news.length === 0 && <h3>No News</h3>}
+        <h1>Latest Sutra</h1>
+        {news.length === 0 && <h3>No Sutra</h3>}
         {news.map((item) => (
           <NewsItem key={item.id} news={item} />
         ))}
         {news.length > 0 && (
           <Link href="/sutra">
-            <a className="btn-secondary">View All News</a>
+            <a className="btn-secondary">View All Sutra</a>
           </Link>
         )}
       </Layout>
