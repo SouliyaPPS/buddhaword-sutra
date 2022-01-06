@@ -6,7 +6,7 @@ import Layout from './component/Layout'
 
 export default function HomePage() {
   return (
-    <div className={styles.container}>
+    <div>
       <Layout>
         <h1>Home</h1>
 
