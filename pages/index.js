@@ -8,6 +8,8 @@ export default function HomePage() {
   return (
     <div className={styles.container}>
       <Layout>
+        <h1>Home</h1>
+
         <Link href="/about">
           <a>About</a>
         </Link>
