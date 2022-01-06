@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
-import Layout from './component/Layout'
+import Layout from '../component/Layout'
 
 export default function About() {
   return (

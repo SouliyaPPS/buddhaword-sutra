@@ -1,8 +1,8 @@
 .hero {
-  height: 300px;
+  height: 200px;
   width: 100%;
-  background: #000 url("/images/hero.jpg") no-repeat center center;
-  color: #fff;
+  background: rgb(255, 255, 255) url("../public/images/512.png") no-repeat center center;
+  /* color: #fff; */
   position: relative;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  /* background-color: rgba(0, 0, 0, 0.7); */
 }
 
 .hero * {

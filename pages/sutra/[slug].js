@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import Layout from '../component/Layout.js'
+import Layout from '../../component/Layout.js'
 
 export default function SingleSutra() {
   const router = useRouter()

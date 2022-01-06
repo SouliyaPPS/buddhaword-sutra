@@ -1,5 +1,5 @@
 import React from 'react'
-import Layout from '../component/Layout.js'
+import Layout from '../../component/Layout.js'
 
 export default function Sutra() {
   return (
