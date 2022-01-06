@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import style from '@/styles/Layout.module.css'
+import styles from '@/styles/Layout.module.css'
 import Header from './Header'
 import Footer from './Footer'
 import { useRouter } from 'next/router'
@@ -16,7 +16,7 @@ export default function Layout({ title, keywords, description, children }) {
       </Head>
       <Header />
       {router.pathname === '/' && <Hero />}
-      <div className={style.container}>{children}</div>
+      <div className={styles.container}>{children}</div>
       <Footer />
     </div>
   )
