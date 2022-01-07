@@ -37,7 +37,6 @@ export async function getStaticPaths() {
   const paths = news.map((item) => ({
     params: { slug: item.slug },
   }));
-
   return {
     paths,
     fallback: true,
@@ -56,7 +55,7 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 // export async function getServerSideProps({ query: { slug } }) {
-//   const res = await fetch(`${API_URL}/api/news/${slug}`);
+//   const res = await fetch(`${API_URL}/api/sutra/${slug}`);
 //   const singleNews = await res.json();
 //   return {
 //     props: {
