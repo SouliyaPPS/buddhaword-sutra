@@ -1,1 +1,1 @@
-export const API_URL = process.env.NEXTJS_PUBLIC_URL || 'https://nextjs-api.vercel.app';
+export const API_URL = process.env.NEXTJS_PUBLIC_URL || process.env.NODE_ENV === 'production' ? 'https://buddhaword.vercel.app' : 'http://localhost:3000';
