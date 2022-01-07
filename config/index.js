@@ -1,1 +1,1 @@
-export const API_URL = process.env.NEXTJS_PUBLIC_URL || "WIipC4kSFsQwdXYy6l8y2wEy";
+export const API_URL = process.env.NEXTJS_PUBLIC_URL || process.env.NEXTJS_PUBLIC_URL_DEV;
