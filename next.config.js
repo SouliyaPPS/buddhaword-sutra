@@ -2,7 +2,7 @@
 //   reactStrictMode: true,
 // }
 
-const isProd = process.env.NODE_ENV === 'production'
+const isProd = process.env.NEXTJS_PUBLIC_URL === 'production'
 
 module.exports = {     
   API_URL: isProd ? 'https://buddhaword.vercel.app' : 'http://localhost:3000',
