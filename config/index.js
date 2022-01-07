@@ -1,1 +1,1 @@
-export const API_URL = process.env.NEXTJS_PUBLIC_URL || 'http://localhost:3000' || 'https://nextjs-api.vercel.app';
+export const API_URL = process.env.NEXTJS_PUBLIC_URL || 'https://nextjs-api.vercel.app';
