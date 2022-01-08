@@ -1,8 +1,8 @@
-import Link from "next/link";
-import Layout from "../../component/Layout";
-import { API_URL } from "@/config/index";
-import NewsItem from "../../component/NewsItem";
-import styles from "/styles/News.module.css";
+import Link from 'next/link'
+import Layout from '../../component/Layout'
+import { API_URL } from '@/config/index'
+import NewsItem from '../../component/NewsItem'
+import styles from '/styles/News.module.css'
 
 export default function News({ news }) {
   return (
@@ -18,7 +18,7 @@ export default function News({ news }) {
         </Link>
       </Layout>
     </div>
-  );
+  )
 }
 
 // export async function getServerSideProps() {
@@ -31,11 +31,12 @@ export default function News({ news }) {
 // }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/sutra`);
-  const news = await res.json();
+  const res = await fetch(`${API_URL}/sutra?_sort=date:ASC&_limit=5`);
+  console.log('res=>', res)
+  const news = await res.json()
 
   return {
     props: { news },
     revalidate: 1,
-  };
+  }
 }

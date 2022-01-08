@@ -13,7 +13,7 @@ export default function SingleNews({ news }) {
     <Layout>
       <div className={styles.news}>
         <span>
-          {news.date} {news.time}
+          {news.date} {news.date}
         </span>
 
         <h1>{news.name}</h1>

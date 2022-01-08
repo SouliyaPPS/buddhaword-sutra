@@ -35,11 +35,12 @@ export default function HomePage({ news }) {
 // }
 
 export async function getStaticProps() {
-  const res = await fetch(`${API_URL}/api/sutra`)
+  const res = await fetch(`${API_URL}/sutra?_sort=date:ASC&_limit=5`);
+  console.log("res=>", res);
   const news = await res.json()
 
   return {
-    props: { news: news.slice(0, 5) },
+    props: { news },
     revalidate: 1,
   }
 }

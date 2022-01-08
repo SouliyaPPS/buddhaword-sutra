@@ -15,7 +15,7 @@ export default function NewsItem({ news }) {
       </div>
       <div className={styles.info}>
         <span>
-          {news.date} {news.time}
+          {news.date} {news.time} 
         </span>
         <h3>{news.name}</h3>
       </div>
